@@ -1,0 +1,74 @@
+h1{
+    color: #e9a4d4;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#profpic{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    display: inline-block;
+
+}
+
+.body {
+    display: flex;
+}
+
+.email{
+    display: flex;
+    padding: 20px 0px;
+}
+
+p{
+    color: #ffffff;
+    padding: 5px;
+}
+
+.contact{
+    display: flex;
+    padding: 70px 0px;
+}
+
+.social{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+   
+}
+
+#github{
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.6);
+    margin: 5px;
+}
+
+#twitter{
+    background-color: #1da1f2;
+    margin: 5px;
+}
+
+h3{
+    position: relative;
+    text-align: left;
+    color: #ffffff;
+}
+
+.describe{
+    display: inline-block;
+    padding: 0px 40px;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.handle{
+display: inline-block;
+color: #ffffff;
+padding: 5px;
+}
+
+body{
+    background-image: url("C:\\Users\\ladankhadija\\Pictures\\logos\\background8.jpg");
+}
