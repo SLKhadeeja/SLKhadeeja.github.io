@@ -1,4 +1,4 @@
-@viewport {
+/* @viewport {
     width: device-width;
     zoom:  1.0;
 }
@@ -10,13 +10,13 @@
     .contact{
         padding: 10vw auto;
     }
-}
+} */
 
 body {
     margin: 0;
     padding: 0;
-    width: 900px;
-    max-width: 100%;
+    width: 1366px;
+    max-width: 99vw;
     margin: 0 auto;
 }
 
@@ -35,7 +35,7 @@ h1{
 }
 
 .body {
-    display: flex;
+    display: block;
 }
 
 .email{
@@ -50,6 +50,7 @@ p{
 .contact{
     display: flex;
     padding: 70px 0px;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
@@ -94,4 +95,10 @@ padding: 5px;
 
 body{
     background-image: url(".\\images\\background8.jpg");
+}
+
+@media screen and (min-width: 600px) {
+    .body {
+        display: flex;
+    }
 }
