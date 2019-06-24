@@ -35,7 +35,9 @@ h1{
 }
 
 .body {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .email{
@@ -99,6 +101,7 @@ body{
 
 @media screen and (min-width: 600px) {
     .body {
-        display: flex;
+        flex-direction: row;
+        jus
     }
 }
