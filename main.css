@@ -113,5 +113,19 @@ body{
     font-family: seven-seg;
     letter-spacing: 0.15em;
     text-shadow: 0px 0px 10px greenyellow;
-    padding: 15px;
+    padding: 15px 5px;
+}
+
+#day{
+    font-family: 'Courier New', Courier, monospace;
+    color: #ff9;
+    text-shadow: 0px 0px 10px greenyellow;
+    text-align: center;
+}
+
+.today{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
