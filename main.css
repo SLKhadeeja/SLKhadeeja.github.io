@@ -1,17 +1,3 @@
-/* @viewport {
-    width: device-width;
-    zoom:  1.0;
-}
-
-@media screen and (max-width:1024px){
-    body{
-        font-size: 10vw;
-    }
-    .contact{
-        padding: 10vw auto;
-    }
-} */
-
 body {
     margin: 0;
     padding: 0;
@@ -102,6 +88,30 @@ body{
 @media screen and (min-width: 600px) {
     .body {
         flex-direction: row;
-        jus
     }
+}
+
+@font-face{
+    font-family: seven-seg;
+    src: url('./Fonts/digital-7.ttf');
+}
+
+#clock{
+    text-align: center;
+    color: #ff9;
+    font-size: 45px;
+    font-family: seven-seg;
+    letter-spacing: 0.15em;
+    text-shadow: 0px 0px 10px goldenrod,
+                 0px 0px 18px goldenrod;
+    }
+
+#date{
+    text-align: center;
+    color: #ff9;
+    font-size: 30px;
+    font-family: seven-seg;
+    letter-spacing: 0.15em;
+    text-shadow: 0px 0px 10px greenyellow;
+    padding: 15px;
 }

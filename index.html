@@ -4,9 +4,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>About Me</title>
         <link href=".\main.css" type="text/css" rel="stylesheet">
+        <script src="script.js"></script>
     </head>
-    
-    <body>
+    <body onload="updateClock()">
         <h1>ABOUT ME</h1>
         <div class="body">
             <div>
@@ -21,6 +21,7 @@
             
             </div>
         </div>
+
         <div class="contact">
                 <a href="https://twitter.com/SLKhadeeja"><img class="social" id="twitter" src=".\images\twitter.png" /></a>
                 <a href="https://github.com/SLKhadeeja"><img class="social" id="github" src=".\images\github-octocat.png" /></a>
@@ -29,7 +30,10 @@
                     <a href="https://mail.google.com/mail/?view=cm&fs=1&to=khadijaladan67@gmail.com&su=SUBJECT&body=BODY"><img class="social" src=".\images\gmail.jpg"/></a>
                     <p>khadijaladan67@gmail.com</p>
                 </div>
-        </div>        
+        </div>
+        
+        <div id="clock"></div>
+        <div id="date"></div>
         
     </body>
 
