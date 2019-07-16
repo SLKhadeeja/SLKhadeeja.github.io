@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>CALCULATOR</title>
+        <link href="main.css" type="text/css" rel="stylesheet">
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+        <input id="view" type="text" value="">
+        <div class="keys">
+            <button class="operator" data-action="clearAll" onclick="cl()">CE</button>
+            <button class="operator" data-action="erase">C</button>
+            <button class="operator" data-action="percentage" onclick="disp('%')">%</button>
+            <button class="operator" data-action="addition" onclick="disp('+')">+</button>
+
+            <button onclick="disp('9')">9</button>
+            <button onclick="disp('8')">8</button>
+            <button onclick="disp('7')">7</button>
+            <button class="operator" data-action="subtraction" onclick="disp('-')">-</button>
+
+            <button onclick="disp('6')">6</button>
+            <button onclick="disp('5')">5</button>
+            <button onclick="disp('4')">4</button>
+            <button class="operator" data-action="multiplication" onclick="disp('*')">*</button>
+
+            <button onclick="disp('3')">3</button>
+            <button onclick="disp('2')">2</button>
+            <button onclick="disp('1')">1</button>
+            <button class="operator" data-action="divition" onclick="disp('/')">/</button>
+
+            <button id="zero" onclick="disp('0')">0</button>
+            <button id="decimal" onclick="disp('.')">.</button>
+            <button class="operator" data-action="equalTo" onclick="solu()">=</button>
+        </div>
+    </body>
+</html>
