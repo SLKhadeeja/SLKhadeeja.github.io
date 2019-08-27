@@ -1,0 +1,40 @@
+div.buttons{
+    display: grid;
+    align-items: center;
+    margin: 10px auto;
+
+}
+
+div.message{
+    display: inline-block;
+    margin: 10px auto;
+    align-items: center;
+    background-color: rgba(17, 78, 78, 0.726);
+    width: 100%;
+    height: 200px;
+}
+
+.message p{
+    font-size: 20px;
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+
+.message p,h1,h4{
+    margin-left: 30px;
+    color: rgb(32, 32, 32);
+}
+
+button{
+    width: 300px;
+    height: 90px;
+    border-radius: 10px;
+    margin: 10px auto;
+    border-color:  rgba(17, 78, 78, 0.726);
+    border-width: 3px;
+}
+
+body{
+    align-items: center;
+    background-image: url(".\\images\\background9.jpg");
+}
