@@ -9,7 +9,7 @@ div.message{
     display: inline-block;
     margin: 10px auto;
     align-items: center;
-    background-color: rgba(17, 78, 78, 0.726);
+    background-color: #5b243494;
     width: 100%;
     height: 200px;
 }
@@ -22,19 +22,21 @@ div.message{
 
 .message p,h1,h4{
     margin-left: 30px;
-    color: rgb(32, 32, 32);
+    color: #343434;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
 
 button{
     width: 300px;
     height: 90px;
     border-radius: 10px;
     margin: 10px auto;
-    border-color:  rgba(17, 78, 78, 0.726);
+    border-color: #5B2434;
     border-width: 3px;
 }
 
 body{
     align-items: center;
-    background-image: url(".\\images\\background9.jpg");
+    background-image: url(".\\images\\background11.jpg");
 }
