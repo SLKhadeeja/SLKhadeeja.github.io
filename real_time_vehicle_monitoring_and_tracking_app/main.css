@@ -11,8 +11,10 @@ div.message{
     align-items: center;
     background-color: #5b243494;
     width: 100%;
-    height: 200px;
+    height: 220px;
 }
+
+
 
 .message p{
     font-size: 20px;
@@ -23,7 +25,6 @@ div.message{
 .message p,h1,h4{
     margin-left: 30px;
     color: #343434;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 
@@ -39,4 +40,23 @@ button{
 body{
     align-items: center;
     background-image: url(".\\images\\background11.jpg");
+}
+
+@font-face{
+    font-family: rosewood;
+    src: url('./fonts/RosewoodStd-Regular.otf');
+}
+
+font-face{
+    font-family: vladimir;
+    src: url('./fonts/VLADIMIR.TTF');
+}
+
+h1{
+    font-family: rosewood;
+    font-size: 45px;
+}
+
+p{
+    font-family: vladimir;
 }
