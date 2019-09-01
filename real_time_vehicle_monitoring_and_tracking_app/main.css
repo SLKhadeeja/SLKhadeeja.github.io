@@ -5,7 +5,7 @@ div.buttons{
 
 }
 
-div.message{
+div.message, div#myLocation{
     display: inline-block;
     margin: 10px auto;
     align-items: center;
