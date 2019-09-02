@@ -47,11 +47,6 @@ body{
     src: url('./fonts/RosewoodStd-Regular.otf');
 }
 
-font-face{
-    font-family: vladimir;
-    src: url('./fonts/VLADIMIR.TTF');
-}
-
 h1{
     font-family: rosewood;
     font-size: 45px;
