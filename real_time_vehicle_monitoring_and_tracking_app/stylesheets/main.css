@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+div.buttons{
+    display: grid;
+    align-items: center;
+    margin: 10px auto;
+}
+
+div.message, div#myLocation{
+    display: inline-block;
+    align-items: center;
+    background-color: #5b243494;
+    width: 100%;
+    height: 260px;
+    text-align: center;
+}
+
+
+
+.message p{
+    font-size: 20px;
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+
+.message p,h1,h4{
+    margin-left: 30px;
+    color: #343434;
+}
+
+
+.button{
+    width: 300px;
+    height: 90px;
+    border-radius: 10px;
+    margin: 10px auto;
+    border:3px solid #5B2434;
+    font-family: vladimir;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s
+}
+
+.button:hover {
+    transform: scale(1.02)
+}
+
+body{
+    align-items: center;
+    background-image: url("../images/background11.jpg");
+}
+
+@font-face{
+    font-family: rosewood;
+    src: url('../fonts/RosewoodStd-Regular.otf');
+}
+
+h1{
+    font-family: rosewood;
+    font-size: 45px;
+}
+
+p{
+    font-family: vladimir;
+}
+
+/********************************
+    LOCATION SPECIFIC STYLES
+********************************/
+.locations {
+    list-style-type: none;
+    width: 300px;
+    max-width: 100%;
+}
+
+.locations li {
+    padding: 20px;
+    margin: 10px;
+    border-radius: 4px;
+    border: 3px solid #5B2434;
+    border-left: 10px solid #5B2434;
+    transition: all 0.3s
+}
+
+.locations li:hover {
+    transform: scale(1.02)
+} 
