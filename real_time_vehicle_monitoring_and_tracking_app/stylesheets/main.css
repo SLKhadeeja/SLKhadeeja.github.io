@@ -8,7 +8,7 @@ div.buttons{
     margin: 10px auto;
 }
 
-div.message, div#myLocation{
+div.message, div#safeLocation, div#track, div#locationNow{
     display: inline-block;
     align-items: center;
     background-color: #5b243494;
@@ -17,10 +17,14 @@ div.message, div#myLocation{
     text-align: center;
 }
 
+div#safeLocation, div#track, div#locationNow{
+    height: 148px;
+}
+
 
 
 .message p{
-    font-size: 20px;
+    font-size: 36px;
     margin-top: 60px;
     margin-bottom: 10px;
 }
@@ -37,7 +41,6 @@ div.message, div#myLocation{
     border-radius: 10px;
     margin: 10px auto;
     border:3px solid #5B2434;
-    font-family: vladimir;
     color: #000;
     display: flex;
     justify-content: center;
@@ -59,6 +62,11 @@ body{
 @font-face{
     font-family: rosewood;
     src: url('../fonts/RosewoodStd-Regular.otf');
+}
+
+@font-face{
+    font-family: vladimir;
+    src: url('../fonts/VLADIMIR.ttf');
 }
 
 h1{
