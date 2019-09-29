@@ -1,0 +1,8 @@
+{
+    "jshint.options": 
+    {
+        "esversion": 6
+    },
+    "editor.fontFamily": " 'Courier New', Consolas, monospace",
+    "editor.fontSize": 12
+}

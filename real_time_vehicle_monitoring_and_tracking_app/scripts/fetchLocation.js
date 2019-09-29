@@ -20,4 +20,4 @@ const displayLocation = (() => {
       mainContainer.appendChild(div);
     }
   }
-})()
+})();
