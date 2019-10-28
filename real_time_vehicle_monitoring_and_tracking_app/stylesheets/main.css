@@ -99,3 +99,19 @@ p{
 .locations li:hover {
     transform: scale(1.02)
 } 
+
+
+/**************************
+ TRACKING STYLES
+**************************/
+
+/* #mapId{
+    position: relative;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 500px;
+    height: 500px;
+} */
+
