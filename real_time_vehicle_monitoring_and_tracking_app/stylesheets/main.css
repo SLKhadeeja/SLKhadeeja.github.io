@@ -105,13 +105,23 @@ p{
  TRACKING STYLES
 **************************/
 
-/* #mapId{
+
+
+div#trajectory{
     position: relative;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    width: 500px;
-    height: 500px;
-} */
+    width: 600px;
+    max-width: calc(100% - 20px);
+    height: 350px;
+    margin: 0 auto;
+    background-image: url('..//images/map.png');
+    border-radius: 10px;
+    box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.2);
+}
+#myChart{
+    position: relative;
+    margin: 100px auto;
+    height: 400px;
+    width: 100%;
+    /* max-width: calc(100% - 10px); */
+}
 

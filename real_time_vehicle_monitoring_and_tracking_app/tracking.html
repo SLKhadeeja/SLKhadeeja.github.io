@@ -5,8 +5,8 @@
     <title>AUTO-TRACK</title>
     <link rel = "icon" type = "image/jpg" href = "./images/logo.jpg">
     <link href="./stylesheets/main.css" type="text/css" rel="stylesheet">
-    <link href="./leaflet/leaflet.css" rel="stylesheet">
-
+    <link href="stylesheets/Chart.css" rel="stylesheet">
+    <script src="scripts/Chart.js"></script>
 </head>
 
 <body>
@@ -14,6 +14,10 @@
         <h1>TRACKING...</h1>
     </div>
 
-    <div id="mapId">
+    <div id="trajectory">
+        <canvas id="myChart"></canvas>
     </div>
+
+    <script src="scripts/trackLocation.js"></script>
+
 </body>
