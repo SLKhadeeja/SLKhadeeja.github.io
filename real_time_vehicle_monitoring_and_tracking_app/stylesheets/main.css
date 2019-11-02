@@ -160,9 +160,8 @@ img#track{
 }
 
 #distanceImg{
-    margin: 40px auto;
+    margin: 0px auto;
     display: flex;
-    margin-bottom: 0px;
 }
 
 
@@ -181,4 +180,10 @@ div.trackMessage{
     font-size: 20px;
     color: rgb(55, 0, 255);
     /* font-family: 'Courier New', Courier, monospace; */
+}
+
+#nudge{
+    height: 39px;
+    width: 76px;
+    margin-left: 20px;
 }

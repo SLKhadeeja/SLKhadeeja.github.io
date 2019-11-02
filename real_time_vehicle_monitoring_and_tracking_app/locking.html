@@ -9,22 +9,27 @@
     <link rel = "icon" type = "image/jpg" href = "./images/logo.jpg">
 </head>
 <body>
-        <div id="locationNow">
-            <h1>LOCKING...</h1>
-        </div>
     
-        <div id="distanceImg">
-            <img src="./images/phone.png" id="phone" />
+    <div id="locationNow">
+        <h1>LOCKING...</h1>
+    </div>
+
+    <div id="distanceImg">
+        <img src="./images/phone.png" id="phone" />
+
+        <img src = "./images/track.png" id = "track" />
+
+        <img src="./images/vehicle.png" id="car" />
+    </div>
     
-            <img src = "./images/track.png" id = "track" />
-    
-            <img src="./images/vehicle.png" id="car" />
-        </div>
-        
-        <div class="trackMessage">
-            <p>You are <b id="distance"></b> away from your objects</p>
-        </div>
-        <script src="scripts/geolib.js"></script>
-        <script src="scripts/lock.js"></script>
+   
+
+    <div class="trackMessage">
+        <button class='button'  id='nudge' onclick=distance()>Allow Location</button>
+        <p>You are <b id="distance"></b> away from your objects</p>
+    </div>
+
+    <script src="scripts/geolib.js"></script>
+    <script src="scripts/lock.js"></script>
 </body>
 </html>
