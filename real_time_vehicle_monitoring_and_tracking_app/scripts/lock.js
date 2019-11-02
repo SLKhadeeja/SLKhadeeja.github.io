@@ -10,10 +10,10 @@ const geoLibDistance = '0KM';
             longitude
         };
         const hisLocation = {
-            latitude: 9.057135999999999,
+            latitude: 6.057135999999999,
             longitude: 7.4702848
         };
-        console.log('here');
+        console.log(myLocation);
         const geoLibDistance = `${(geolib.getDistance(myLocation, hisLocation)/1000).toFixed(2)}KM`;
         distance.innerHTML = geoLibDistance;
     }, () => {
