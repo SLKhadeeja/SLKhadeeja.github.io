@@ -81,7 +81,7 @@ h1{
 }
 
 p{
-    font-family: vladimir;
+    /* font-family: vladimir; */
     margin: 0 auto;
 }
 
@@ -125,7 +125,8 @@ div#trajectory{
     height: 350px;
     margin: 70px auto;
     margin-left: 10px;
-    background-image: url('..//images/map.png');
+    background-color: rgb(199, 199, 199);
+    /* background-image: url('..//images/map.png'); */
     border-radius: 10px;
     box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.2);
 }
@@ -134,6 +135,50 @@ div#trajectory{
     margin: 50px auto;
     height: 350px;
     width: 100%;
-    /* max-width: calc(100% - 10px); */
 }
 
+/**********************
+    LOCK PAGE STYLES
+**********************/
+
+img#car{
+    height: 41px;
+    width: 66px;
+    margin: 50px auto;
+}
+
+img#phone{
+    height: 56px;
+    width: 63px;
+    margin: 50px auto;
+}
+
+img#track{
+    height: 103px;
+    width: 152px;
+    margin-top: 25px;
+}
+
+#distanceImg{
+    margin: 40px auto;
+    display: flex;
+    margin-bottom: 0px;
+}
+
+
+h3{
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+div.trackMessage{
+    margin: 0 100px;
+    display: inline-block;
+    justify-items: center;
+}
+
+#distance{
+    font-size: 20px;
+    color: rgb(55, 0, 255);
+    /* font-family: 'Courier New', Courier, monospace; */
+}
