@@ -1,0 +1,17 @@
+{
+    "name": "A Real-time Automobile Monitoring and Tracking System",
+    "short_name": "AUTO-TRACK",
+    "theme_color": "#5b243494",
+    "background_color": "#5b2434",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": ".",
+    "description": "An application linked to a trajectory tracking ayatem",
+    "orientation": "any",
+    "icons": [
+        {
+            "src": "./images/logo.jpg",
+            "sizes": "1024x1024"
+        }
+    ]
+}
