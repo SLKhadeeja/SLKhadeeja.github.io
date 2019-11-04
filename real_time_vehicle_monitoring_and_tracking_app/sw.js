@@ -15,13 +15,15 @@ self.addEventListener('install', function(e) {
         '/images/phone.png',
         '/images/track.png',
         '/images/vehicle.png',
+        '/images/carLogo.png',
         '/scripts/Chart.js',
         '/scripts/fetchLocation.js',
         '/scripts/geolib.js',
         '/scripts/lock.js',
         '/scripts/trackLocation.js',
         '/stylesheets/main.css',
-        '/stylesheets/Chart.css'
+        '/stylesheets/Chart.css',
+        '/fonts/RosewoodStd-Regular.otf'
       ]
      );
    })

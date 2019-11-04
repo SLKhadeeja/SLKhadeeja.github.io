@@ -10,8 +10,8 @@
     "orientation": "any",
     "icons": [
         {
-            "src": "./images/logo.jpg",
-            "sizes": "128x87"
+            "src": "./images/carLogo.png",
+            "sizes": "1200x1200"
         }
     ]
 }
