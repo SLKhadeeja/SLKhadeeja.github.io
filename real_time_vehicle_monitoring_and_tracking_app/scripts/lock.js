@@ -1,5 +1,4 @@
 //  Get element with ID of distance
-
 const distance = () => {
     const distance = document.querySelector('#distance');
 
