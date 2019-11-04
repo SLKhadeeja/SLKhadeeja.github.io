@@ -1,6 +1,6 @@
 // Changed function to Immediately Invoked Function Expression(IIFE)
 const displayLocation = (() => {
-  fetch('.\\locations.json')
+  fetch('.\\savedLocations.json')
     .then(function (response) {
       return response.json();
     })
@@ -16,7 +16,7 @@ const displayLocation = (() => {
     var mainContainer = document.querySelector("#locations ul");
     for (var i = 0; i < data.length; i++) {
       var div = document.createElement("li");
-      div.innerHTML = 'Location: ' + data[i].latitude + ' ' + data[i].longitude;
+      div.innerHTML ='Name: ' + data[i].name + ' ==> ' + 'Location: ' + data[i].latitude + ', ' + data[i].longitude;
       mainContainer.appendChild(div);
     }
   }
