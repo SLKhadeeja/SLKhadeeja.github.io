@@ -1,55 +1,43 @@
 [
     {
-       
-        "longitude": "6.529472",
-        "latitude": "9.595833"
+    
+        "longitude": "6.531777",
+        "latitude": "9.596083"
     },
 
     {
-       
-        "longitude": "6.530722",
+    
+        "longitude": "6.531944",
+        "latitude": "9.596194"
+    },
+
+    {
+    
+        "longitude": "6.532138",
+        "latitude": "9.596583"
+    },
+
+    {
+    
+        "longitude": "6.532694",
+        "latitude": "9.596722"
+    },
+
+    {
+    
+        "longitude": "6.533305",
+        "latitude": "9.596861"
+    },
+
+    {
+    
+        "longitude": "6.516888",
+        "latitude": "9.596250"
+    },
+
+    {
+    
+        "longitude": "6.517166",
         "latitude": "9.596889"
-    },
-
-    {
-       
-        "longitude": "6.529583",
-        "latitude": "9.595333"
-    },
-
-    {
-       
-        "longitude": "6.529638",
-        "latitude": "9.594583"
-    },
-
-    {
-       
-        "longitude": "6.530083",
-        "latitude": "9.594556"
-    },
-
-    {
-       
-        "longitude": "6.530416",
-        "latitude": "9.595000"
-    },
-    {
-       
-        "longitude": "6.530888",
-        "latitude": "9.595500"
-    },
-
-    {
-       
-        "longitude": "6.531083",
-        "latitude": "9.595833"
-    },
-
-    {
-       
-        "longitude": "6.531500",
-        "latitude": "9.596333"
     }
-
 ]
