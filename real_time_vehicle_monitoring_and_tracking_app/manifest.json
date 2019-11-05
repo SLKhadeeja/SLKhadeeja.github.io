@@ -5,7 +5,7 @@
     "background_color": "#5b2434",
     "display": "standalone",
     "scope": "/",
-    "start_url": "/",
+    "start_url": "/index.html",
     "description": "An application linked to a trajectory tracking ayatem",
     "orientation": "any",
     "icons": [

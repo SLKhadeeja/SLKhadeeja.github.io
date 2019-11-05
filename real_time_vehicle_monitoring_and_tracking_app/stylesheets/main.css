@@ -64,7 +64,7 @@ body{
     background-image: url("../images/background11.jpg");
 }
 
-@font-face{
+/* @font-face{
     font-family: rosewood;
     src: url('../fonts/RosewoodStd-Regular.otf');
 }
@@ -72,10 +72,10 @@ body{
 @font-face{
     font-family: vladimir;
     src: url('../fonts/Vladimir_Script.ttf');
-}
+} */
 
 h1{
-    font-family: rosewood;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 45px;
     margin: 10px auto;
 }

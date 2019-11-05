@@ -10,6 +10,7 @@ self.addEventListener('install', function(e) {
         '/tracking.html',
         '/manifest.json',
         '/locations.json',
+        '/savedLocations.json',
         '/images/background11.jpg',
         '/images/logo.jpg',
         '/images/phone.png',
@@ -22,8 +23,7 @@ self.addEventListener('install', function(e) {
         '/scripts/lock.js',
         '/scripts/trackLocation.js',
         '/stylesheets/main.css',
-        '/stylesheets/Chart.css',
-        '/fonts/RosewoodStd-Regular.otf'
+        '/stylesheets/Chart.css'
       ]
      );
    })
@@ -31,7 +31,7 @@ self.addEventListener('install', function(e) {
 });
 
 self.addEventListener('fetch', function(event) {
-  console.log(event.request.url);
+  // console.log(event.request.url);
  
   event.respondWith(
     caches.match(event.request).then(function(response) {
@@ -39,3 +39,28 @@ self.addEventListener('fetch', function(event) {
     })
   );
  });
+
+//  let deferredPrompt;
+
+// window.addEventListener('beforeinstallprompt', (e) => {
+//   deferredPrompt = e;
+//   btnAdd.style.display = 'block';
+// });
+
+// btnAdd.addEventListener('click', (e) => {
+  
+//   deferredPrompt.prompt();
+//   deferredPrompt.userChoice
+//     .then((choiceResult) => {
+//       if (choiceResult.outcome === 'accepted') {
+//         console.log('User accepted the A2HS prompt');
+//       } else {
+//         console.log('User dismissed the A2HS prompt');
+//       }
+//       deferredPrompt = null;
+//     });
+// });
+
+// window.addEventListener('appinstalled', (evt) => {
+//   console.log('a2hs installed');
+// });
