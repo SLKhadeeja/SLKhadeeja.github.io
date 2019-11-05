@@ -3,27 +3,27 @@ var VERSION = 'version_01' ;          // Version of the off-line cache (change t
 var CACHE_NAME = APP_PREFIX + VERSION;
 var URLS = [
   '/',                            // Add URL you want to cache in this list.
-  '/scripts/',
-  '/images/',
-  '/stylesheets/',
-  '/locations.html',
-  '/locking.html',
-  '/tracking.html',
-  '/manifest.json',
-  '/locations.json',
-  '/images/background11.jpg',
-  '/images/logo.jpg',
-  '/images/phone.png',
-  '/images/track.png',
-  '/images/vehicle.png',
-  '/scripts/Chart.js',
-  '/scripts/fetchLocation.js',
-  '/scripts/geolib.js',
-  '/scripts/lock.js',
-  '/scripts/trackLocation.js',
-  '/stylesheets/main.css',
-  '/stylesheets/Chart.css',                   // If you have separate JS/CSS files,
-  '/index.html'            // add path to those files here
+  'scripts/',
+  'images/',
+  'stylesheets/',
+  'locations.html',
+  'locking.html',
+  'tracking.html',
+  'manifest.json',
+  'locations.json',
+  'images/background11.jpg',
+  'images/logo.jpg',
+  'images/phone.png',
+  'images/track.png',
+  'images/vehicle.png',
+  'scripts/Chart.js',
+  'scripts/fetchLocation.js',
+  'scripts/geolib.js',
+  'scripts/lock.js',
+  'scripts/trackLocation.js',
+  'stylesheets/main.css',
+  'stylesheets/Chart.css',                   // If you have separate JS/CSS files,
+  'index.html'            // add path to those files here
 ];
 
 // Respond with cached resources

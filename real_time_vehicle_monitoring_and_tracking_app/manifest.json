@@ -5,9 +5,9 @@
     "background_color": "#5b2434",
     "display": "standalone",
     "scope": "/",
-    "start_url": "/index.html",
+    "start_url": "index.html",
     "description": "An application linked to a trajectory tracking system",
-    "orientation": "any",
+    "orientation": "portrait",
     "icons": [
         {
             "src": "./images/carLogo.png",
