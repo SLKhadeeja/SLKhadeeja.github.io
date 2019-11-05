@@ -6,7 +6,7 @@
     "display": "standalone",
     "scope": "/",
     "start_url": "/index.html",
-    "description": "An application linked to a trajectory tracking ayatem",
+    "description": "An application linked to a trajectory tracking system",
     "orientation": "any",
     "icons": [
         {
@@ -15,3 +15,4 @@
         }
     ]
 }
+

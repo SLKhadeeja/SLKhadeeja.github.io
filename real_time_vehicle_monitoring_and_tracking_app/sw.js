@@ -1,66 +1,78 @@
-self.addEventListener('install', function(e) {
-  e.waitUntil(
-    caches.open('autotrack').then(function(cache) {
-     return cache.addAll(
-       [
-        '/',
-        '/index.html',
-        '/locations.html',
-        '/locking.html',
-        '/tracking.html',
-        '/manifest.json',
-        '/locations.json',
-        '/savedLocations.json',
-        '/images/background11.jpg',
-        '/images/logo.jpg',
-        '/images/phone.png',
-        '/images/track.png',
-        '/images/vehicle.png',
-        '/images/carLogo.png',
-        '/scripts/Chart.js',
-        '/scripts/fetchLocation.js',
-        '/scripts/geolib.js',
-        '/scripts/lock.js',
-        '/scripts/trackLocation.js',
-        '/stylesheets/main.css',
-        '/stylesheets/Chart.css'
-      ]
-     );
-   })
- );
-});
+var APP_PREFIX = 'autoTrack' ;   // Identifier for this app (this needs to be consistent across every cache update)
+var VERSION = 'version_01' ;          // Version of the off-line cache (change this value everytime you want to update cache)
+var CACHE_NAME = APP_PREFIX + VERSION;
+var URLS = [
+  '/',                            // Add URL you want to cache in this list.
+  '/scripts/',
+  '/images/',
+  '/stylesheets/',
+  '/locations.html',
+  '/locking.html',
+  '/tracking.html',
+  '/manifest.json',
+  '/locations.json',
+  '/images/background11.jpg',
+  '/images/logo.jpg',
+  '/images/phone.png',
+  '/images/track.png',
+  '/images/vehicle.png',
+  '/scripts/Chart.js',
+  '/scripts/fetchLocation.js',
+  '/scripts/geolib.js',
+  '/scripts/lock.js',
+  '/scripts/trackLocation.js',
+  '/stylesheets/main.css',
+  '/stylesheets/Chart.css',                   // If you have separate JS/CSS files,
+  '/index.html'            // add path to those files here
+];
 
-self.addEventListener('fetch', function(event) {
-  // console.log(event.request.url);
- 
-  event.respondWith(
-    caches.match(event.request).then(function(response) {
-      return response || fetch(event.request);
+// Respond with cached resources
+self.addEventListener('fetch', function (e) {
+  console.log('fetch request : ' + e.request.url);
+  e.respondWith(
+    caches.match(e.request).then(function (request) {
+      if (request) { // if cache is available, respond with cache
+        console.log('responding with cache : ' + e.request.url);
+        return request;
+      } else {       // if there are no cache, try fetching request
+        console.log('file is not cached, fetching : ' + e.request.url);
+        return fetch(e.request);
+      }
+
+      // You can omit if/else for console.log & put one line below like this too.
+      // return request || fetch(e.request)
     })
   );
- });
+});
 
-//  let deferredPrompt;
+// Cache resources
+self.addEventListener('install', function (e) {
+  e.waitUntil(
+    caches.open(CACHE_NAME).then(function (cache) {
+      console.log('installing cache : ' + CACHE_NAME);
+      return cache.addAll(URLS);
+    })
+  );
+});
 
-// window.addEventListener('beforeinstallprompt', (e) => {
-//   deferredPrompt = e;
-//   btnAdd.style.display = 'block';
-// });
+// Delete outdated caches
+self.addEventListener('activate', function (e) {
+  e.waitUntil(
+    caches.keys().then(function (keyList) {
+      // `keyList` contains all cache names under your username.github.io
+      // filter out ones that has this app prefix to create white list
+      var cacheWhitelist = keyList.filter(function (key) {
+        return key.indexOf(APP_PREFIX);
+      });
+      // add current cache name to white list
+      cacheWhitelist.push(CACHE_NAME);
 
-// btnAdd.addEventListener('click', (e) => {
-  
-//   deferredPrompt.prompt();
-//   deferredPrompt.userChoice
-//     .then((choiceResult) => {
-//       if (choiceResult.outcome === 'accepted') {
-//         console.log('User accepted the A2HS prompt');
-//       } else {
-//         console.log('User dismissed the A2HS prompt');
-//       }
-//       deferredPrompt = null;
-//     });
-// });
-
-// window.addEventListener('appinstalled', (evt) => {
-//   console.log('a2hs installed');
-// });
+      return Promise.all(keyList.map(function (key, i) {
+        if (cacheWhitelist.indexOf(key) === -1) {
+          console.log('deleting cache : ' + keyList[i] );
+          return caches.delete(keyList[i]);
+        }
+      }));
+    })
+  );
+});
