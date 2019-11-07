@@ -4,14 +4,14 @@
     "theme_color": "#5b2434",
     "background_color": "#5b2434",
     "display": "standalone",
-    "scope": "/",
-    "start_url": "index.html",
+    "scope": "./",
+    "start_url": "./index.html",
     "description": "An application linked to a trajectory tracking system",
     "orientation": "portrait",
     "icons": [
         {
             "src": "./images/carLogo.png",
-            "sizes": "360x360"
+            "sizes": "1200x1200"
         }
     ]
 }
