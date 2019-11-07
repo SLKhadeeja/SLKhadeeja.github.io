@@ -3,9 +3,6 @@
 const CACHE = "pwabuilder-precache";
 const precacheFiles = [
   './',
-  './scripts/',
-  './images/',
-  './stylesheets/',
   './index.html',
   './locations.html',
   './locking.html',
