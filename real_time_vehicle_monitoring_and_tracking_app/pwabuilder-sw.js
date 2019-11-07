@@ -9,6 +9,7 @@ const precacheFiles = [
   '/tracking.html',
   '/manifest.json',
   '/locations.json',
+  '/savedLocations.json',
   '/images/background11.jpg',
   '/images/logo.jpg',
   '/images/phone.png',
