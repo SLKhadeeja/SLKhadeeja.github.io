@@ -7,6 +7,7 @@
     <link href="./stylesheets/main.css" type="text/css" rel="stylesheet">
     <link rel = "icon" type = "image/jpg" href = "./images/logo.jpg">
     <link rel = "manifest" href = "./manifest.json">
+    <script src = "./pwabuilder-sw-register.js"></script>
 </head>
 
 <body>
@@ -23,14 +24,5 @@
         <a class="button" href="./locations.html">SAVED LOCATIONS</a>
         <a class="button" href="./tracking.html">TRACK</a>
     </div>
-    
-    <script>
-        if('serviceWorker' in navigator) {
-          navigator.serviceWorker
-                   .register('/sw.js')
-                   .then(function() { console.log("Service Worker Registered"); });
-        }
-    </script>
-
 
 </body> 
