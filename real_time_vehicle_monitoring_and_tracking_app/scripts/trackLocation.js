@@ -20,18 +20,29 @@
         });
 
 
-        
+        var ctx = document.getElementById('myChart').getContext("2d");
+        var gradientStroke = ctx.createLinearGradient(500, 0, 100, 0);
+        gradientStroke.addColorStop(0, '#df0707');
+        gradientStroke.addColorStop(1, '#f49080');
         var chr = new Chart(document.getElementById("myChart"),{
             type: 'scatter',
 
             data: {
                 datasets: [{
                     label: "TRACKING",
+                    borderColor: gradientStroke,
+                    pointBorderColor: gradientStroke,
+                    pointBackgroundColor: gradientStroke,
+                    pointHoverBackgroundColor: gradientStroke,
+                    pointHoverBorderColor: gradientStroke,
+                    pointBorderWidth: 5,
+                    pointHoverRadius: 5,
+                    pointHoverBorderWidth: 1,
+                    pointRadius: 2,
+                    borderWidth: 3,
                     data: chartData,
                     showLine: true,
                     fill: false,
-                    pointBackgroundColor: 'rgb(128, 128, 0)',
-                    borderColor: 'rgb(34, 110, 196)',
                     scales: {
                         xAxes: [{
                             ticks:{
