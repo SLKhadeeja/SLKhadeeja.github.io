@@ -1,0 +1,1 @@
+const serialPort = require('serial-port')
