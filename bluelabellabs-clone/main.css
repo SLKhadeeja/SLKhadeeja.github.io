@@ -1,0 +1,78 @@
+body {
+    font-family: "Neutrif", Roboto, system, -apple-system, BlinkMacSystemFont, ".SFNSDisplay-Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+}
+
+#nav {
+    background-color: #3444f1;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 35px;
+    display: flex;
+    font-size: 1rem;
+    padding: 32.5px 0;
+    position: fixed;
+    z-index: 999;
+}
+
+.nav-container {
+    width: 100%;
+    display: flex;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 77.5px;
+    margin-right: 77.5px;
+}
+
+.nav-items {
+    display: flex;
+    padding: 0;
+    margin: 0 150px;
+    list-style: none;
+    text-align: center;
+    align-items: center;
+}
+
+li {
+    margin-right: 40px;
+}
+
+.nav-items a {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 0.875rem;
+    align-items: center;
+}
+
+#talk {
+    color: #3444f1;
+}
+
+#talk-item {
+    background-color: #fff;
+
+}
+
+a#logo{
+    padding: 0;
+    line-height: 1;
+    height: 35px;
+    width: 27px;
+    margin-right: 1rem;
+}
+
+a {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #3444f1;
+}
