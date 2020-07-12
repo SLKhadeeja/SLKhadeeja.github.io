@@ -1,0 +1,56 @@
+.form {
+  width: 700px;
+  margin: 50px 150px;
+  position: absolute;
+}
+
+.name {
+    display: flex;
+    width: 100%;
+}
+
+#firstName, #lastName {
+  width: 50%;
+}
+
+.input-field {
+    margin: 0.5em 0.7em;
+}
+
+.field {
+    display: grid;
+}
+
+input {
+    display: grid;
+    width: 100%;
+    margin-top: 10px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+button {
+    height: 40px;
+    width: 70px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+.terms {
+    margin: 10px 10px;
+    display: flex;
+}
+
+#checkbox {
+  width: auto;
+  margin-top: 1em;
+}
+
+@media screen and (max-width: 700px) {
+  .form {
+    width: 300px;
+    margin: 10px auto;
+  }
+}
