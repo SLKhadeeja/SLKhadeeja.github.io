@@ -3,8 +3,16 @@ body {
     font-weight: 400;
 }
 
+h1, h3 {
+    margin-top: 0;
+    font-weight: 500;
+    font-family: Neurif, Roboto, system, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";;
+}
+ 
+/*nav bar style*/
+
 #nav {
-    background-color: #3444f1;
+    /* background-color: #3444f1; */
     top: 0;
     left: 0;
     right: 0;
@@ -14,15 +22,13 @@ body {
     padding: 32.5px 0;
     position: fixed;
     z-index: 999;
+    background-image: linear-gradient(302deg, #232fb8, #4554ff);
 }
 
 .nav-container {
     width: 100%;
     display: flex;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: 77.5px;
-    margin-right: 77.5px;
+    margin: 0 77.5px;
 }
 
 .nav-items {
@@ -45,14 +51,29 @@ li {
     align-items: center;
 }
 
+.nav-items-right {
+    margin-left: 312px;
+    margin-right: 0;
+}
+
 #talk {
-    color: #3444f1;
-}
-
-#talk-item {
+    color: #232fb8;
+    display: block;
+    padding: 10px 20px;
+    width: 100px;
     background-color: #fff;
-
+    text-align: center;
+    border-radius: 30px;
+    text-decoration: none;
 }
+
+#talk:first-child::after {
+    content: "😄";
+}
+
+/* li#talk-item {
+    height: 35px;
+} */
 
 a#logo{
     padding: 0;
@@ -62,17 +83,91 @@ a#logo{
     margin-right: 1rem;
 }
 
+#logo > img {
+    background-color: transparent;
+}
+
 a {
     text-decoration: none;
     background-color: transparent;
 }
 
 .wrapper {
-    position: relative;
+    position: absolute;
     overflow: hidden;
     width: 100%;
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
-    background-color: #3444f1;
+    margin-top: 100px;
+    background-image: linear-gradient(302deg, #232fb8, #4554ff);
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
+/*home section*/
+
+.heading1, .heading2{
+    color: #fff;
+}
+
+h1.heading1 {
+    font-size: 1.875rem !important;
+    letter-spacing: -1px !important;
+    font-weight: 500 !important;
+    opacity: 0.5 !important;
+    color: #FFF !important;
+    padding-bottom: 10px !important;
+}
+
+h3.heading2 {
+    font-size: 2.75rem;
+    line-height: 1.27;
+    letter-spacing: -1px;
+}
+
+h1 span, h3 span {
+    display: flex;
+}
+
+.container {
+    height: 100%;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 177.5px;
+}
+
+.home-text {
+    margin-top: 10%;
+    position: relative;
+    z-index: 3;
+    max-width: 585px;
+    height: 165
+}
+
+.home-wrap {
+    display: flex;
+}
+
+div.home-img {
+    opacity: 1;
+    transform: scale(1);
+    transform-origin: center;
+}
+
+.home-img img {
+    height: 719.1px;
+    width: 895.5px;
+}
+
+.home-img-bg {
+    display: block;
+    width: 960px;
+    height: 960px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.05);
+    position: absolute;
+    left: 50px;
+    bottom: 100px;
 }
