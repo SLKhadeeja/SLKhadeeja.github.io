@@ -121,15 +121,15 @@ class Form extends Component {
       <div className='form' onSubmit={this.handleSubmit.bind(this)} noValidate>
         <form className='main-form'>
           <div className='name'>
-            <label className='input-field'>
+            <label className='input-field name'>
               First Name
-              <input type='text' placeholder='firstName' id="firstName" />
+              <input type='text' placeholder='First Name' id="firstName" />
               <p></p>
             </label>
 
-            <label className='input-field'>
+            <label className='input-field name'>
               Last Name
-              <input type='text' placeholder='lastName' id="lastName" />
+              <input type='text' placeholder='Last Name' id="lastName" />
               <p></p>
             </label>
           </div>
