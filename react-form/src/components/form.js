@@ -4,7 +4,7 @@ import '../styles/form.css';
 class Form extends Component {
 
     handleSubmit = (e) => {
-        
+        e.preventDefault();
         alert("Your registration has been successfully submitted")
     }
 
@@ -33,10 +33,14 @@ class Form extends Component {
         }
         }
 
+    // errorMessage = () => {
+    //     input.setCustomValidity('This field is required')
+    // }
+
 
     render() {
         return(
-            <div className="form" onSubmit={this.handleSubmit.bind(this)}>
+            <div className="form" onSubmit={this.handleSubmit.bind(this)} noValidate >
                 <form className="main-form" >
                     <div className="name">
 
@@ -57,7 +61,7 @@ class Form extends Component {
                     <div className="field">
                         <label className="input-field">
                             Email 
-                            <input type="text" required="required"  placeholder="Email" onChange={this.validateEmail.bind(this)} />
+                            <input type="email" required="required"  placeholder="Email" onChange={this.validateEmail.bind(this)} />
                         </label>
                         
                         <label className="input-field">

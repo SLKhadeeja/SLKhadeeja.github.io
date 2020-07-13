@@ -38,10 +38,11 @@ input {
 
 input:valid {
   background-color: rgb(157, 228, 140);
+  border-color: rgb(57, 112, 81);
 }
 
 input:required {
-  border-color: red;
+  border-color: rgba(212, 245, 208, 0.753);
 }
 
 button {
