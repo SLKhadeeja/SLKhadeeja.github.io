@@ -4,11 +4,29 @@ import '../styles/form.css';
 class Form extends Component {
   handleSubmit = (e) => {
     e.preventDefault();
+
+    const firstName = document.querySelector('#firstName');
+    const lastName = document.querySelector('#lastName');
     const email = document.querySelector('#email');
     const password = document.querySelector('#password');
+    const passwordConfirm = document.querySelector('#confirmPassword');
+    const website = document.querySelector('#website');
+    const checkbox = document.querySelector('#checkbox');
 
     let isEmailValid = false;
     let isPasswordValid = false;
+    let isFieldEmpty = false;
+
+
+    if (!this.isFilled(firstName.value)) {
+        firstName.classList.add('error');
+        firstName.nextSibling.textContent = 'This field is required';
+    }
+
+    if (!this.isFilled(lastName.value)) {
+        lastName.classList.add('error');
+        lastName.nextSibling.textContent = 'This field is required';
+    }
 
     // Check if email contains any text before doing the email check
     if (this.isFilled(email.value)) {
@@ -19,12 +37,30 @@ class Form extends Component {
     }
 
     // Check if password contains any text before doing the email check
-    if (this.isFilled(email.value)) {
+    if (this.isFilled(password.value)) {
         isPasswordValid = this.validatePassword(password);
     } else {
         password.classList.add('error');
         password.nextSibling.textContent = 'This field is required';
     }
+
+    if (this.isFilled(passwordConfirm.value)) {
+        isPasswordValid = this.validatePassword(passwordConfirm);
+    } else {
+        passwordConfirm.classList.add('error');
+        passwordConfirm.nextSibling.textContent = 'This field is required';
+    }
+
+    if (!this.isFilled(website.value)) {
+        website.classList.add('error');
+        website.nextSibling.textContent = 'This field is required';
+    }
+
+    if (!this.isFilled(checkbox.value)) {
+        checkbox.classList.add('error');
+        checkbox.nextSibling.textContent = 'This field is required';
+    }
+
 
 
     if (this.isFormInvalid([isEmailValid, isPasswordValid])) {
@@ -63,7 +99,7 @@ class Form extends Component {
   };
 
   validatePassword = (password) => {
-    var reg = /^[A-Za-z]\w{7,14}$/;
+    var reg = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/;
 
     if (reg.test(password.value)) {
         password.classList.remove('error');
@@ -85,14 +121,16 @@ class Form extends Component {
       <div className='form' onSubmit={this.handleSubmit.bind(this)} noValidate>
         <form className='main-form'>
           <div className='name'>
-            <label className='input-field' id='firstName'>
+            <label className='input-field'>
               First Name
-              <input type='text' placeholder='First Name' />
+              <input type='text' placeholder='firstName' id="firstName" />
+              <p></p>
             </label>
 
-            <label className='input-field' id='lastName'>
+            <label className='input-field'>
               Last Name
-              <input type='text' placeholder='Last Name' />
+              <input type='text' placeholder='lastName' id="lastName" />
+              <p></p>
             </label>
           </div>
 
@@ -123,17 +161,21 @@ class Form extends Component {
                 type='password'
                 placeholder='Confirm Password'
                 onChange={this.validatePassword.bind(this)}
+                id="confirmPassword"
               />
+              <p></p>
             </label>
 
             <label className='input-field'>
               Website
-              <input type='text' placeholder='Website' />
+              <input type='text' placeholder='Website' id="website" />
+              <p></p>
             </label>
           </div>
 
           <div className='terms'>
             <input type='checkbox' id='checkbox' />
+            <p></p>
             <p>I accept the terms and conditions</p>
           </div>
 
