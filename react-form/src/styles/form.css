@@ -4,7 +4,7 @@
   padding: 20px 10px;
   margin: 50px auto;
   background-color: #ecebeb;
-  border: 1px solid rgba(0 0 0 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .name {
@@ -33,17 +33,36 @@ input {
     height: 30px;
     border-radius: 5px;
     padding: 5px 10px;
-    border: 1px solid rgba(0 0 0 0.5)
+    border: 1px solid rgba(0, 0, 0, 0.5);
 }
 
-input:valid {
+input:focus {
+  outline: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+input.valid {
   background-color: rgb(157, 228, 140);
   border-color: rgb(57, 112, 81);
 }
 
-input:required {
-  border-color: rgba(212, 245, 208, 0.753);
+input.error {
+  background-color: rgba(255, 0, 0, 0.1);
+  border-color: rgba(255, 0, 0, 0.3);
 }
+
+input.error + p {
+  font-size: 0.8rem;
+  margin: 0;
+  font-weight: normal;
+  color: red;
+}
+
+
+
+/* input:required {
+  border-color: rgba(212, 245, 208, 0.753);
+} */
 
 button {
     height: 40px;
@@ -63,11 +82,4 @@ button {
 #checkbox {
   width: auto;
   margin-top: 1em;
-}
-
-@media screen and (max-width: 700px) {
-  .form {
-    width: 300px;
-    margin: 10px auto;
-  }
 }
