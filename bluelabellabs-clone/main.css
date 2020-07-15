@@ -1,6 +1,8 @@
 body {
     font-family: "Neutrif", Roboto, system, -apple-system, BlinkMacSystemFont, ".SFNSDisplay-Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 400;
+    width: 1200px;
+    max-width: 100%;
 }
 
 h1, h3 {
@@ -17,12 +19,13 @@ h1, h3 {
     left: 0;
     right: 0;
     height: 35px;
-    display: flex;
+    /* display: flex; */
     font-size: 1rem;
     padding: 32.5px 0;
     position: fixed;
     z-index: 999;
     background-image: linear-gradient(302deg, #232fb8, #4554ff);
+    max-width: 100%;
 }
 
 .nav-container {
@@ -34,14 +37,14 @@ h1, h3 {
 .nav-items {
     display: flex;
     padding: 0;
-    margin: 0 150px;
+    margin: 0 auto;
     list-style: none;
     text-align: center;
     align-items: center;
 }
 
 li {
-    margin-right: 40px;
+    padding-right: 40px;
 }
 
 .nav-items a {
@@ -49,11 +52,6 @@ li {
     font-weight: 600;
     font-size: 0.875rem;
     align-items: center;
-}
-
-.nav-items-right {
-    margin-left: 312px;
-    margin-right: 0;
 }
 
 #talk {
@@ -71,16 +69,20 @@ li {
     content: "😄";
 }
 
+#talk-item {
+    padding: 10px;
+}
+
 /* li#talk-item {
     height: 35px;
 } */
 
 a#logo{
-    padding: 0;
+    padding: 10px;
     line-height: 1;
     height: 35px;
     width: 27px;
-    margin-right: 1rem;
+    margin-right: auto;
 }
 
 #logo > img {
@@ -131,6 +133,11 @@ h1 span, h3 span {
     display: flex;
 }
 
+.wrapper {
+    max-width: 100%;
+}
+
+
 .container {
     height: 100%;
     position: relative;
@@ -142,12 +149,14 @@ h1 span, h3 span {
     margin-top: 10%;
     position: relative;
     z-index: 3;
-    max-width: 585px;
-    height: 165
 }
 
 .home-wrap {
     display: flex;
+}
+
+.img-wrap {
+    max-width: 50%
 }
 
 div.home-img {
@@ -157,17 +166,14 @@ div.home-img {
 }
 
 .home-img img {
-    height: 719.1px;
-    width: 895.5px;
+    height: 700px;
+    width: 800px;
 }
 
 .home-img-bg {
-    display: block;
     width: 960px;
     height: 960px;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.05);
-    position: absolute;
-    left: 50px;
-    bottom: 100px;
+    position: absolute;----------
 }
