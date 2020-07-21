@@ -26,7 +26,7 @@ h1, h3 {
     font-size: 1rem;
     padding-top: 25px;
     position: fixed;
-    z-index: 999;
+    z-index: 99;
     background-image: linear-gradient(302deg, #232fb8, #4554ff);
 }
 
@@ -79,8 +79,6 @@ li {
 a#logo{
     padding: 10px;
     line-height: 1;
-    height: 35px;
-    width: 27px;
     margin: 0 auto;
 }
 
@@ -114,15 +112,17 @@ a {
     padding: 0 5em;
 }
 
+.home-wrap {
+    display: flex;
+    flex-flow: row wrap;
+}
+
 .home-text {
     margin-top: 10%;
     position: relative;
     z-index: 3;
-}
-
-.home-wrap {
-    display: flex;
-    flex-flow: row wrap;
+    width: 500px;
+    max-width: 100%;
 }
 
 .heading1, .heading2{
@@ -139,23 +139,20 @@ h1.heading1 {
 }
 
 h3.heading2 {
-    font-size: 2.75rem;
+    font-size: 40px;
     line-height: 1.27;
     letter-spacing: -1px;
 }
+
 h1 span, h3 span {
     display: flex;
     flex-flow: row wrap;
 }
 
-div.home-img {
-    opacity: 1;
-}
-
-.home-img img {
-    height: 700px;
-    width: 800px;
-    padding: 10%;
+.home-img > img {
+    height: 400px;
+    width: 500px;
+    margin: 30px auto;
 }
 
 .home-img-bg {
@@ -164,4 +161,14 @@ div.home-img {
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.05);
     position: absolute;
+    bottom: 20px;
+    z-index: 10;
 }
+
+@media screen and (max-width: 750px) {
+    h3.heading2 {
+        font-size: 70px;
+        line-height: 1.27;
+        letter-spacing: -1px;
+    }
+  }
