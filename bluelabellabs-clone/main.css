@@ -9,7 +9,8 @@ body {
     padding: 0;
     width: 1440px;
     max-width: 100%;
-    overflow-y: scroll;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 h1, h3 {
@@ -17,6 +18,12 @@ h1, h3 {
     font-weight: 500;
     font-family: Neurif, Roboto, system, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";;
 }
+
+a {
+    text-decoration: none;
+    background-color: transparent;
+}
+
  
 /*nav bar style*/
 
@@ -27,18 +34,19 @@ h1, h3 {
     font-size: 1rem;
     padding-top: 25px;
     position: fixed;
-    z-index: 99;
+    width: 1440px;
+    z-index: 999;
     background-image: linear-gradient(302deg, #232fb8, #4554ff);
 }
 
-.nav-container {
+ .nav-container {
     max-width: calc(100% - 10px);
     width: 1440px;
     display: flex;
     margin: 0 auto;
 }
 
-.nav-items {
+.nav-items-left, .nav-items-right {
     display: flex;
     padding: 0;
     margin: 0 auto;
@@ -46,6 +54,7 @@ h1, h3 {
     text-align: center;
     align-items: center;
 }
+
 
 li {
     padding-right: 2em;
@@ -86,14 +95,11 @@ a#logo{
     background-color: transparent;
 }
 
-a {
-    text-decoration: none;
-    background-color: transparent;
-}
+
+/*home section*/
 
 .wrapper {
-    position: absolute;
-    overflow: hidden;
+    position: relative;
     width: 1440px;
     max-width: 100%;
     background-image: linear-gradient(302deg, #232fb8, #4554ff);
@@ -102,7 +108,6 @@ a {
     right: 0;
 }
 
-/*home section*/
 
 .container {
     height: 100%;
@@ -168,7 +173,6 @@ h1 span, h3 span {
     background-color: rgba(255, 255, 255, 0.05);
     position: absolute;
     bottom: 20px;
-    z-index: 10;
 }
 
 .home-logos {
@@ -176,7 +180,6 @@ h1 span, h3 span {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    z-index: 2;
     margin-top: -40px;
 }
 
@@ -206,6 +209,8 @@ h1 span, h3 span {
 .home-logos .logos li img {
     transform: scale(0.7);
 }
+
+/* media screens */
 
 @media screen and (max-width: 750px) {
     .container {
@@ -240,14 +245,31 @@ h1 span, h3 span {
     }
   }
 
+
+
   @media screen and (min-width: 750px) {
+      .wrapper {
+          height: 700px;
+      }
+
       .home-logos {
-          margin-top: 0;
-          margin-left: auto;
-          margin-right: auto;
+          margin: 0 15%;
           position: absolute;
           left: 15px;
           right: 15px;
-          bottom: -30px;
+          bottom: -15px;
       }
+
+      .home-logos .trusted, .home-logos .awards {
+        display: flex;
+       }
+
+    .home-logos .trusted h4 , .home-logos .awards h4 {
+       margin-right: 10px;
+       font-size: 10px;
+    }
+
+    .home-logos .awards {
+        margin-left: 50px;
+    }
   }
