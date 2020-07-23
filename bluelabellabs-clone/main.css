@@ -9,6 +9,7 @@ body {
     padding: 0;
     width: 1440px;
     max-width: 100%;
+    overflow-y: scroll;
 }
 
 h1, h3 {
@@ -79,7 +80,6 @@ li {
 a#logo{
     padding: 10px;
     line-height: 1;
-    margin: 0 auto;
 }
 
 #logo > img {
@@ -123,6 +123,7 @@ a {
     z-index: 3;
     width: 500px;
     max-width: 100%;
+    margin-left: 10%;
 }
 
 .heading1, .heading2{
@@ -149,10 +150,15 @@ h1 span, h3 span {
     flex-flow: row wrap;
 }
 
+.home-img {
+    position: absolute;
+}
+
 .home-img > img {
-    height: 400px;
-    width: 500px;
+    height: 700px;
+    width: 800px;
     margin: 30px auto;
+    margin-left: -17%;
 }
 
 .home-img-bg {
@@ -165,10 +171,83 @@ h1 span, h3 span {
     z-index: 10;
 }
 
+.home-logos {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    z-index: 2;
+    margin-top: -40px;
+}
+
+.container .home-logos h4 {
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.home-logos .logos {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.home-logos .trusted, .home-logos .awards {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.home-logos .logos li {
+    display: inline-block;
+}
+
+.home-logos .logos li img {
+    transform: scale(0.7);
+}
+
 @media screen and (max-width: 750px) {
-    h3.heading2 {
-        font-size: 70px;
-        line-height: 1.27;
-        letter-spacing: -1px;
+    .container {
+        padding: 0
     }
+    
+    h3.heading2 {
+        font-size: 1.5rem;
+    }
+
+    .home-img-bg {
+        width: 400px;
+        height: 400px;
+    }
+
+    .home-img > img {
+        height: 450px;
+        width: 450px;
+    }
+
+    .home-img {
+        position: relative;
+    }
+
+    .home-logos {
+        justify-content: center;
+    }
+
+    .home-logos .logos li {
+        margin: 0 auto;
+        padding: 0;
+    }
+  }
+
+  @media screen and (min-width: 750px) {
+      .home-logos {
+          margin-top: 0;
+          margin-left: auto;
+          margin-right: auto;
+          position: absolute;
+          left: 15px;
+          right: 15px;
+          bottom: -30px;
+      }
   }
