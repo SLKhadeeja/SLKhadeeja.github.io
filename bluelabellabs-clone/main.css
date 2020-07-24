@@ -24,6 +24,10 @@ a {
     background-color: transparent;
 }
 
+li {
+    list-style: none;
+}
+
  
 /*nav bar style*/
 
@@ -35,6 +39,7 @@ a {
     padding-top: 25px;
     position: fixed;
     width: 1440px;
+    /* max-width: calc(100% - 10px); */
     z-index: 999;
     background-image: linear-gradient(302deg, #232fb8, #4554ff);
 }
@@ -95,6 +100,15 @@ a#logo{
     background-color: transparent;
 }
 
+/*mobile styles*/
+
+.mobile-nav.responsive {
+    background-image: linear-gradient(302deg, #232fb8, #4554ff);
+    overflow: hidden;
+    position: relative;
+    width: 100vw;
+    margin-top: 18%;
+}
 
 /*home section*/
 
@@ -104,7 +118,7 @@ a#logo{
     max-width: 100%;
     background-image: linear-gradient(302deg, #232fb8, #4554ff);
     left: 0;
-    top: 5rem;
+    top: -3rem;
     right: 0;
 }
 
@@ -216,7 +230,49 @@ h1 span, h3 span {
     .container {
         padding: 0
     }
+
+    .wrapper {
+        top: -4rem;
+    }
+
+    .wrapper.mobile {
+        top: 0;
+    }
+
+    /*mobile nav-bar*/
+
+    #nav {
+        padding-top: 0;
+        max-width: calc(100% - 10px);
+    }
+
+    .nav-items-left {
+        display: none;
+    }
+
+
+    #talk {
+        padding: 5px 8px;
+        width: 101px;
+        border-radius: 30px;
+        font-size: 5px;
+    }
+
+    #talk-item {
+        padding: 2px;
+    }
     
+    a#logo{
+        padding: 10px;
+        line-height: 1;
+    }
+
+    .menu-text {
+        padding: 7px;
+    }
+
+    /*mobile home*/
+
     h3.heading2 {
         font-size: 1.5rem;
     }
@@ -227,8 +283,8 @@ h1 span, h3 span {
     }
 
     .home-img > img {
-        height: 450px;
-        width: 450px;
+        height: 300px;
+        width: 300px;
     }
 
     .home-img {
@@ -251,6 +307,10 @@ h1 span, h3 span {
       .wrapper {
           height: 700px;
       }
+
+      .mobile-nav .menu-bars{
+        display: none;
+    }
 
       .home-logos {
           margin: 0 15%;
