@@ -232,7 +232,7 @@ h1 span, h3 span {
     }
 
     .wrapper {
-        top: -4rem;
+        padding-top: 4rem;
     }
 
     .wrapper.mobile {
