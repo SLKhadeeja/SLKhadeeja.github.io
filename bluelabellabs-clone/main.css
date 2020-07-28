@@ -102,6 +102,10 @@ a#logo{
 
 /*mobile styles*/
 
+.mobile-nav .menu-bars{
+    display: none;
+}
+
 .mobile-nav.responsive {
     background-image: linear-gradient(302deg, #232fb8, #4554ff);
     overflow: hidden;
@@ -228,7 +232,7 @@ h1 span, h3 span {
 
 @media screen and (max-width: 750px) {
     .container {
-        padding: 0
+        padding: 10px;
     }
 
     .wrapper {
@@ -241,9 +245,14 @@ h1 span, h3 span {
 
     /*mobile nav-bar*/
 
+    .menu-bars{
+        display: block;
+    }
+
     #nav {
         padding-top: 0;
         max-width: calc(100% - 10px);
+        padding-bottom: 4%;
     }
 
     .nav-items-left {
@@ -307,10 +316,6 @@ h1 span, h3 span {
       .wrapper {
           height: 700px;
       }
-
-      .mobile-nav .menu-bars{
-        display: none;
-    }
 
       .home-logos {
           margin: 0 15%;
