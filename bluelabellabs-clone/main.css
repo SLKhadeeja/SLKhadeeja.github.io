@@ -107,7 +107,7 @@ a#logo{
     overflow: hidden;
     position: relative;
     width: 100vw;
-    margin-top: 18%;
+    margin-top: 42vw;
 }
 
 /*home section*/
@@ -168,6 +168,11 @@ h3.heading2 {
 h1 span, h3 span {
     display: flex;
     flex-flow: row wrap;
+}
+
+#talk.home-talk {
+    width: 17vw;
+    font-size: 2vw;
 }
 
 .home-img {
@@ -246,6 +251,9 @@ h1 span, h3 span {
         top: 0;
     }
 
+    #nav {
+        padding-top: 1vw;
+    }
     /*mobile nav-bar*/
 
     .menu-bars{
@@ -256,16 +264,21 @@ h1 span, h3 span {
         display: none;
     }
 
+    #talk.home-talk {
+        width: 40vw;
+        font-size: 5vw;
+    }
+
 
     #talk {
         padding: 5px 8px;
         width: 24vw;
         border-radius: 30px;
-        font-size: 5px;
+        font-size: 2vw;
     }
 
     #talk-item {
-        padding: 2px;
+        padding: 2vw;
     }
     
     a#logo{
