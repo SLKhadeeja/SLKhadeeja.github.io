@@ -102,13 +102,13 @@ a#logo{
     display: none;
 }
 
-.mobile-nav.responsive {
+/* .mobile-nav.responsive {
     background-image: linear-gradient(302deg, #232fb8, #4554ff);
     overflow: hidden;
     position: relative;
     width: 100vw;
     margin-top: 18vw;
-}
+} */
 
 /*home section*/
 
@@ -236,6 +236,10 @@ h1 span, h3 span {
     #nav {
         padding-top: 0;
     }
+
+    .mobile-nav.responsive {
+        margin-top: 18vw;
+    }
 }
 
 @media screen and (max-width: 750px) {
@@ -290,6 +294,13 @@ h1 span, h3 span {
         padding: 7px;
     }
 
+    .mobile-nav.responsive {
+        background-image: linear-gradient(302deg, #232fb8, #4554ff);
+        overflow: hidden;
+        position: relative;
+        width: 100vw;
+        margin-top: 14vw;
+    }
     /*mobile home*/
 
     h3.heading2 {
